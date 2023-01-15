@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VCIPainting</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/Desktop/VCLProject/img/vcl-logo.png</normaloff>:/Desktop/VCLProject/img/vcl-logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>14</y>
+      <width>961</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_VCLPaiting"/>
+   </widget>
+   <widget class="QMenu" name="menu2D">
+    <property name="title">
+     <string>2D形状</string>
+    </property>
+    <addaction name="actionLine"/>
+    <addaction name="actionCurve"/>
+    <addaction name="actionCircle"/>
+    <addaction name="actionEllipse"/>
+    <addaction name="actionTriangle"/>
+    <addaction name="actionSquare"/>
+    <addaction name="actionPolygon"/>
+    <addaction name="actionRectangle"/>
+   </widget>
+   <widget class="QMenu" name="menu3D">
+    <property name="title">
+     <string>3D形状</string>
+    </property>
+    <addaction name="actionCube"/>
+    <addaction name="actionPyramid"/>
+   </widget>
+   <widget class="QMenu" name="menuNature">
+    <property name="title">
+     <string>Nature</string>
+    </property>
+    <addaction name="actionEarthquake"/>
+    <addaction name="actionHurricane"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu2D"/>
+   <addaction name="menu3D"/>
+   <addaction name="menuNature"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPoint"/>
+   <addaction name="actionDottedPoint"/>
+   <addaction name="actionBrush"/>
+   <addaction name="actionEraser"/>
+   <addaction name="separator"/>
+   <addaction name="actionPalette"/>
+   <addaction name="actionDropper"/>
+   <addaction name="actionGradient"/>
+   <addaction name="separator"/>
+   <addaction name="actionSolid"/>
+   <addaction name="actionDotted"/>
+   <addaction name="separator"/>
+   <addaction name="actionTranslate"/>
+   <addaction name="actionRotate"/>
+   <addaction name="actionClip"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="separator"/>
+   <addaction name="actionPoint_Bigger"/>
+   <addaction name="actionPoint_Smaller"/>
+   <addaction name="separator"/>
+   <addaction name="actionDrawback"/>
+   <addaction name="actionDelete"/>
+  </widget>
+  <action name="actionLine">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Line.png</normaloff>:/Desktop/VCLProject/img/Line.png</iconset>
+   </property>
+   <property name="text">
+    <string>line</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionCircle">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Circle.png</normaloff>:/Desktop/VCLProject/img/Circle.png</iconset>
+   </property>
+   <property name="text">
+    <string>circle</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionEllipse">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Ellipse.png</normaloff>:/Desktop/VCLProject/img/Ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>ellipse</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionTriangle">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Triangle.png</normaloff>:/Desktop/VCLProject/img/Triangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>triangle</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionPalette">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Palette.png</normaloff>:/Desktop/VCLProject/img/Palette.png</iconset>
+   </property>
+   <property name="text">
+    <string>Palette</string>
+   </property>
+  </action>
+  <action name="actionSquare">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Square.png</normaloff>:/Desktop/VCLProject/img/Square.png</iconset>
+   </property>
+   <property name="text">
+    <string>square</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionPolygon">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Polygon.png</normaloff>:/Desktop/VCLProject/img/Polygon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Polygon</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Delete.png</normaloff>:/Desktop/VCLProject/img/Delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>delete</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Rectangle tool png icon.png</normaloff>:/Desktop/VCLProject/img/Rectangle tool png icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>rectangle</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionDottedLine">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/DottedLine.png</normaloff>:/Desktop/VCLProject/img/DottedLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>dottedLine</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionCurve">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Curve.png</normaloff>:/Desktop/VCLProject/img/Curve.png</iconset>
+   </property>
+   <property name="text">
+    <string>curve</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+C</string>
+   </property>
+  </action>
+  <action name="actionTranslate">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/translate.png</normaloff>:/Desktop/VCLProject/img/translate.png</iconset>
+   </property>
+   <property name="text">
+    <string>translate</string>
+   </property>
+  </action>
+  <action name="actionRotate">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/rotate.png</normaloff>:/Desktop/VCLProject/img/rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>rotate</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/zoomin.png</normaloff>:/Desktop/VCLProject/img/zoomin.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoomIn</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/zoomout.png</normaloff>:/Desktop/VCLProject/img/zoomout.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoomOut</string>
+   </property>
+  </action>
+  <action name="actionPoint">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Point.png</normaloff>:/Desktop/VCLProject/img/Point.png</iconset>
+   </property>
+   <property name="text">
+    <string>point</string>
+   </property>
+  </action>
+  <action name="actionGradient">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/gradient.png</normaloff>:/Desktop/VCLProject/img/gradient.png</iconset>
+   </property>
+   <property name="text">
+    <string>gradient</string>
+   </property>
+  </action>
+  <action name="actionDottedPoint">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/DottedPoint.png</normaloff>:/Desktop/VCLProject/img/DottedPoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>DottedPoint</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionAbout_VCLPaiting">
+   <property name="text">
+    <string>About VCIPainting</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionEraser">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/eraser.png</normaloff>:/Desktop/VCLProject/img/eraser.png</iconset>
+   </property>
+   <property name="text">
+    <string>eraser</string>
+   </property>
+  </action>
+  <action name="actionDrawback">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Drawback.png</normaloff>:/Desktop/VCLProject/img/Drawback.png</iconset>
+   </property>
+   <property name="text">
+    <string>drawback</string>
+   </property>
+  </action>
+  <action name="actionCube">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/cube.png</normaloff>:/Desktop/VCLProject/img/cube.png</iconset>
+   </property>
+   <property name="text">
+    <string>cuboid</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionBrush">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/brush.png</normaloff>:/Desktop/VCLProject/img/brush.png</iconset>
+   </property>
+   <property name="text">
+    <string>brush</string>
+   </property>
+  </action>
+  <action name="actionPoint_Bigger">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Point_Bigger.png</normaloff>:/Desktop/VCLProject/img/Point_Bigger.png</iconset>
+   </property>
+   <property name="text">
+    <string>Point_Bigger</string>
+   </property>
+  </action>
+  <action name="actionPoint_Smaller">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Point_Smaller.png</normaloff>:/Desktop/VCLProject/img/Point_Smaller.png</iconset>
+   </property>
+   <property name="text">
+    <string>Point_Smaller</string>
+   </property>
+  </action>
+  <action name="actionClip">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/clip.png</normaloff>:/Desktop/VCLProject/img/clip.png</iconset>
+   </property>
+   <property name="text">
+    <string>clip</string>
+   </property>
+  </action>
+  <action name="actionEarthquake">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/earthquake.png</normaloff>:/Desktop/VCLProject/img/earthquake.png</iconset>
+   </property>
+   <property name="text">
+    <string>earthquake</string>
+   </property>
+  </action>
+  <action name="actionHurricane">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/hurricane.png</normaloff>:/Desktop/VCLProject/img/hurricane.png</iconset>
+   </property>
+   <property name="text">
+    <string>hurricane</string>
+   </property>
+  </action>
+  <action name="actionDropper">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/dropper.png</normaloff>:/Desktop/VCLProject/img/dropper.png</iconset>
+   </property>
+   <property name="text">
+    <string>dropper</string>
+   </property>
+  </action>
+  <action name="actionPyramid">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Pyramid.png</normaloff>:/Desktop/VCLProject/img/Pyramid.png</iconset>
+   </property>
+   <property name="text">
+    <string>pyramid</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionSolid">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/Line.png</normaloff>:/Desktop/VCLProject/img/Line.png</iconset>
+   </property>
+   <property name="text">
+    <string>solid</string>
+   </property>
+  </action>
+  <action name="actionDotted">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/Desktop/VCLProject/img/DottedLine.png</normaloff>:/Desktop/VCLProject/img/DottedLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>dotted</string>
+   </property>
+   <property name="toolTip">
+    <string>dotted</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>

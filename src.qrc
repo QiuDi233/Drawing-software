@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../Desktop/VCLProject/img/Circle.png</file>
+        <file>../../Desktop/VCLProject/img/Delete.png</file>
+        <file>../../Desktop/VCLProject/img/Ellipse.png</file>
+        <file>../../Desktop/VCLProject/img/Palette.png</file>
+        <file>../../Desktop/VCLProject/img/Polygon.png</file>
+        <file>../../Desktop/VCLProject/img/Select.png</file>
+        <file>../../Desktop/VCLProject/img/Square.png</file>
+        <file>../../Desktop/VCLProject/img/Text.png</file>
+        <file>../../Desktop/VCLProject/img/Triangle.png</file>
+        <file>../../Desktop/VCLProject/img/Line.png</file>
+        <file>../../Desktop/VCLProject/img/Rectangle tool png icon.png</file>
+        <file>../../Desktop/VCLProject/img/icon.png</file>
+        <file>../../Desktop/VCLProject/img/vcl-logo.png</file>
+        <file>../../Desktop/VCLProject/img/DottedLine.png</file>
+        <file>../../Desktop/VCLProject/img/Curve.png</file>
+        <file>../../Desktop/VCLProject/img/rotate.png</file>
+        <file>../../Desktop/VCLProject/img/translate.png</file>
+        <file>../../Desktop/VCLProject/img/zoomin.png</file>
+        <file>../../Desktop/VCLProject/img/zoomout.png</file>
+        <file>../../Desktop/VCLProject/img/Help.png</file>
+        <file>../../Desktop/VCLProject/img/Point.png</file>
+        <file>../../Desktop/VCLProject/img/gradient.png</file>
+        <file>../../Desktop/VCLProject/img/DottedPoint.png</file>
+        <file>../../Desktop/VCLProject/img/eraser.png</file>
+        <file>../../Desktop/VCLProject/img/Drawback.png</file>
+        <file>../../Desktop/VCLProject/img/cube.png</file>
+        <file>../../Desktop/VCLProject/img/brush.png</file>
+        <file>../../Desktop/VCLProject/img/Point_Bigger.png</file>
+        <file>../../Desktop/VCLProject/img/Point_Smaller.png</file>
+        <file>../../Desktop/VCLProject/img/clip.png</file>
+        <file>../../Desktop/VCLProject/img/earthquake.png</file>
+        <file>../../Desktop/VCLProject/img/dropper.png</file>
+        <file>../../Desktop/VCLProject/img/hurricane.png</file>
+        <file>../../Desktop/VCLProject/img/Pyramid.png</file>
+    </qresource>
+</RCC>
