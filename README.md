@@ -1,9 +1,9 @@
 # Drawing-software
 可视计算与交互概论大作业
 
-画面与功能展示见report.pdf
+- 画面与功能展示见report.pdf
 
-选题参考：https://docs.qq.com/doc/DSnBnSWFKT2hXSFFr
+- 选题参考：https://docs.qq.com/doc/DSnBnSWFKT2hXSFFr
 
 Drawing software
 
