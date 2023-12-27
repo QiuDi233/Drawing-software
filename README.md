@@ -1,6 +1,8 @@
 # Drawing-software
 可视计算与交互概论大作业
 
+- Demo: https://www.bilibili.com/video/BV1YD4y1n7wj/?spm_id_from=333.999.0.0&vd_source=38d6c2589d844d05367667cc40d5ccf7
+  
 - 画面与功能展示见report.pdf
 
 - 选题参考：https://docs.qq.com/doc/DSnBnSWFKT2hXSFFr
